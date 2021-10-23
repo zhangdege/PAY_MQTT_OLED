@@ -1,0 +1,11 @@
+mutation PostsByS($S: String!) {
+	postsByS(s: $S) {
+		id
+		createdAt
+		updatedAt
+		title
+		creator {
+			id
+		}
+	}
+}

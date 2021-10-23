@@ -1,0 +1,17 @@
+query PostsLimit($limit: Int, $offset: Int) {
+	posts(limit: $limit, offset: $offset) {
+		id
+		createdAt
+		updatedAt
+		title
+		creator {
+			id
+			createdAt
+			updatedAt
+			phone
+			role
+			__typename
+		}
+		__typename
+	}
+}

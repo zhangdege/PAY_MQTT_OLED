@@ -3,17 +3,34 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "next": "latest",
+    "urql": "^2.0.4",
+    "alipay-sdk": "^3.1.7",
+    "graphql": "^15.5.1",
+    "@urql/exchange-graphcache": "^4.3.3",
+    "@urql/exchange-multipart-fetch": "^0.1.13",
+    "next-transpile-modules": "^8.0.0",
+    "next-urql": "^3.2.0",
+    "qrcode.react": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.1.1",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/typescript": "2.1.2",
+    "@graphql-codegen/typescript-graphql-files-modules": "2.1.0",
+    "@graphql-codegen/typescript-operations": "2.1.2",
+    "@graphql-codegen/typescript-urql": "^3.1.2",
+    "@graphql-codegen/urql-introspection": "2.1.0",
     "@types/node": "15.0.0",
+    "@types/qrcode.react": "^1.0.2",
     "@types/react": "17.0.4",
     "@types/react-dom": "17.0.3",
     "@types/styled-components": "5.1.9",

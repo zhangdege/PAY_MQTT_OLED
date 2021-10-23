@@ -1,0 +1,7 @@
+subscription getPaysuccessnotice {
+	getPaysuccessnotice {
+		payMethod
+		total
+		description
+	}
+}

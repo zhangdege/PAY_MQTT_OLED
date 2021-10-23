@@ -1,0 +1,3 @@
+mutation AddProfilePicture($pictures: [Upload!]!) {
+	addProfilePicture(pictures: $pictures)
+}

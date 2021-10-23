@@ -1,0 +1,13 @@
+mutation PhoneLoginOrRegister($phone: String!, $token: String!) {
+	phoneLoginOrRegister(options: { phone: $phone, token: $token }) {
+		errors {
+			field
+			message
+		}
+		user {
+			phone
+			id
+			avatars
+		}
+	}
+}
